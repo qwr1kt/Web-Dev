@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-container{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.content-wrapper {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+
+}
+
+.left-section {
+    flex: 1;
+    padding-bottom: 100px;
+}
+
+.fb-logo {
+    color: #1877f2;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    font-family: 'Klavika', sans-serif;
+}
+
+.quote {
+    font-size: 28px;
+    line-height: 32px;
+    color: #000000;
+    font-weight: normal;
+}
+
+.right-section {
+    width: 396px;
+}
+
+.login-box {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 24px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 17px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-field:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+}
+
+.login-button {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 16px;
+    transition: background-color 0.2s;
+}
+
+.login-button:hover {
+    background-color: #1564cb;
+}
+
+.forgot-password {
+    font-weight: 600;
+    text-align: center;
+    margin: 5px;
+}
+
+.forgot-password a {
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.divide-line {
+    font-size:15px;
+    color: #d7d9dc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.create-account-container {
+    text-align: center;
+}
+
+.create-account-button {
+    padding: 14px 16px;
+    background-color: #42b72a;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.create-account-button:hover {
+    background-color: #30911d;
+}
+
+.create-page-text {
+    text-align: center;
+    font-size: 14px;
+    color: #1c1e21;
+}
+
+.create-page-text a {
+    color: #1c1e21;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.create-page-text a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 20px;
+    border-top: 1px solid #dadde1;
+}
+
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.language-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #dddfe2;
+}
+
+.language-list li {
+    font-size: 12px;
+}
+
+.language-list a {
+    color: #8a8d91;
+    text-decoration: none;
+}
+
+.language-list a:hover {
+    text-decoration: underline;
+}
+
+.language-list .current {
+    color: #1c1e21;
+    font-weight: 600;
+}
+
+
+.plus-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: #f0f2f5;
+    border: 1px solid #ccd0d5;
+    border-radius: 2px;
+    color: #1c1e21;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.plus-button:hover {
+    background-color: #e4e6eb;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-links li {
+    font-size: 12px;
+}
+
+.footer-links a {
+    color: #8a8d91;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 11px;
+    color: #8a8d91;
+    margin-top: 16px;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5; /* Тот же серый фон, что в Фейсбуке */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ШАПКА САЙТА (Сделана по логике твоего футера из FB) */
+.header-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 1px solid #dddfe2;
+}
+
+.header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.github-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1c1e21;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #1877f2; /* Синий цвет при наведении */
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.login-link {
+    text-decoration: none;
+    color: #1c1e21;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.signup-button {
+    padding: 6px 12px;
+    background-color: transparent;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ГЛАВНАЯ ЧАСТЬ (Как в Фейсбуке) */
+.main-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.content-wrapper {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ЗАГОЛОВОК */
+.top-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #1c1e21;
+    margin-bottom: 16px;
+}
+
+.quote {
+    font-size: 18px;
+    color: #65676b; /* Приглушенный текст */
+    margin-bottom: 24px;
+    max-width: 700px;
+}
+
+/* ТВОЯ КНОПКА (Стиль Фейсбука, но зеленая) */
+.primary-button {
+    padding: 14px 24px;
+    background-color: #42b72a; /* Тот самый зеленый из FB */
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.primary-button:hover {
+    background-color: #30911d;
+}
+
+/* КОНТЕЙНЕР ДЛЯ КАРТОЧЕК */
+.pricing-cards-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    align-items: stretch;
+}
+
+/* КАРТОЧКА (Стиль .login-box из Фейсбука 1-в-1) */
+.price-box {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 8px;
+    /* Твои фирменные двойные тени */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1); 
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.price-desc {
+    font-size: 14px;
+    color: #65676b;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.price-amount {
+    font-size: 36px;
+    color: #1c1e21;
+}
+
+.price-period {
+    font-size: 14px;
+    color: #65676b;
+    margin-bottom: 20px;
+}
+
+/* КНОПКИ В КАРТОЧКАХ (Как .login-button) */
+.action-button, .dark-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+
+.action-button {
+    background-color: #e4e6eb; /* Серый цвет FB */
+    color: #1c1e21;
+}
+
+.dark-button {
+    background-color: #1c1e21; /* Черная кнопка */
+    color: #ffffff;
+}
+
+/* ТВОЙ РАЗДЕЛИТЕЛЬ */
+.divide-line {
+    height: 1px;
+    background-color: #dadde1;
+    margin: 20px 0;
+}
+
+/* СПИСОК ФИЧ */
+.feature-list {
+    list-style: none;
+}
+
+.feature-list li {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #1c1e21;
+}
+
+/* ВЫДЕЛЕННАЯ КАРТОЧКА ENTERPRISE */
+.recommended-box {
+    border: 2px solid #1877f2; /* Синяя рамка Фейсбука */
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1877f2;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 12px;
+}
+
+/* ФУТЕР (Твой код из Фейсбука без изменений) */
+footer {
+    background-color: #ffffff;
+    padding: 20px;
+    border-top: 1px solid #dadde1;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.language-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.language-list a {
+    color: #8a8d91;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.language-list a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #8a8d91;
+    margin-top: 10px;
+}
