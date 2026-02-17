@@ -3,7 +3,7 @@ const addButton = document.querySelector('.add-button');
 const todoList = document.querySelector('.to-do-List');
 
 function addTask() {
-    const taskText = taskInput.value.trim();
+    const taskText = taskInput.value;
 
     if (taskText === '') {
         alert('Please set a goal for today!');
