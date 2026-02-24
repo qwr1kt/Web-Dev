@@ -1,0 +1,260 @@
+/* */
+.product-card{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    border: 1px solid rgb(183, 183, 183);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 8px 0;
+}
+
+.product-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  display: block;
+}
+
+.credit-banner {
+  position: absolute;
+  top: 10px;        
+  left: 10px;        
+  background-color: rgb(241, 70, 53);
+  color: #ffffff;
+  padding: 4px 10px;
+  font-size: 20px;   
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 15px;
+  z-index: 10;      
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
+}
+
+.bonus-banner {
+  position: absolute;
+  top: 48px;        
+  left: 10px;        
+  background-color: rgb(42, 159, 36);
+  color: #ffffff;
+  padding: 4px 10px;
+  font-size: 20px;   
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 8px;
+  z-index: 10;      
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
+}
+
+.product-info {
+  padding: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 15px 0;  
+  border-top: 1px solid #f0f0f0;
+  padding-top: 8px;
+}
+
+.price-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 2px;
+}
+
+.main-price {
+  font-size: 18px;
+  font-weight: 800;
+  color: #000;
+}
+
+.divider {
+  width: 1px;
+  height: 30px;
+  background-color: #e0e0e0;
+}
+
+.installment-box {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.installment-sum {
+  background-color: #ffda52; 
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+
+.x-month {
+  font-size: 14px;
+  color: #999;
+}
+
+.product-name {
+    height: 3.2em;      /* Высота ровно под 2 строки */
+    overflow: hidden;
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.4;
+    color: #01aaff;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  font-size: 1.2rem;
+}
+
+.star.filled {
+  color: #ff0707;
+}
+
+.product-price{
+    width: 100px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.product-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+}
+
+.share-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-whatsapp {
+  background-color: #25D366;
+  color: white;
+  flex: 1;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128C7E;
+}
+
+.btn-telegram {
+  background-color: #0088cc;
+  color: white;
+  flex: 1;
+}
+
+.btn-telegram:hover {
+  background-color: #0077b5;
+}
+
+/* img {
+  display: block !important;
+  width: 200px !important;
+  height: 200px !important;
+  background-color: red; /* Если увидишь красный квадрат — значит тег есть, а картинки нет */
+ 
+  /* Кнопка удаления в углу картинки */
+.btn-remove-overlay {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #eee;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 10;
+  color: #ff4635;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-remove-overlay:hover {
+  background: #ff4635;
+  color: white;
+}
+
+/* Кнопка лайка */
+.btn-like-inline {
+  background: none;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 2px 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #555;
+  transition: 0.2s;
+}
+
+.btn-like-inline:hover {
+  border-color: #ff4635;
+  background: #fff5f5;
+}

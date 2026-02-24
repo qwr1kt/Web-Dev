@@ -3,11 +3,21 @@ const addButton = document.querySelector('.add-button');
 const todoList = document.querySelector('.to-do-List');
 
 function addTask() {
-    const taskText = taskInput.value;
+    const taskText = taskInput.value.trim();
 
     if (taskText === '') {
         alert('Please set a goal for today!');
         return;
+    }
+
+    const existingTasks = document.querySelectorAll('.task-text');
+
+    for (let task of existingTasks) {
+        if (task.textContent.toLowerCase() === taskText.toLowerCase()) {
+            alert('Duplicate!');
+            taskInput.value = '';
+            return; 
+        }
     }
 
     const li = document.createElement('li');
@@ -35,7 +45,7 @@ function addTask() {
 
     todoList.appendChild(li);
 
-    taskInput.value = '';
+    taskInput.value = ''; 
 
     checkbox.addEventListener('change', function() {
         if (checkbox.checked) {
@@ -57,3 +67,5 @@ taskInput.addEventListener('keypress', function(e) {
         addTask();
     }
 });
+
+console.log(2);
