@@ -1,0 +1,44 @@
+.container{
+    font-weight: 00;
+    text-align: center;
+    margin:auto;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-icon {
+  width: 100%;        /* Занимает всю ширину контейнера */
+  max-width: 400px;   /* Но не больше 400px, чтобы не мылило */
+  height: auto;       /* Сохраняет пропорции */
+  display: block;     /* Убирает лишние отступы снизу */
+  margin: 20px auto;  /* Центрирует саму картинку */
+  border-radius: 15px; /* Чтобы выглядело современно */
+}
+
+
+/* .link-btn{ 
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: none;
+    background: #3498db;
+    color: white;
+    transition: 0.3s;
+}
+
+.link-btn:hover { background: #2980b9; } */
+button {
+  cursor: pointer;
+  padding: 8px 15px;
+  border-radius: 4px;
+  border: none;
+  background: #3498db;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover { background: #2980b9; }

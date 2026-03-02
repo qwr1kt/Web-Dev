@@ -1,0 +1,30 @@
+<div *ngIf="loading">Loading album...</div>
+<div *ngIf="!loading && error">{{ error }}</div>
+
+<div *ngIf="!loading && !error && album">
+  <h1>Album #{{ album.id }}</h1>
+
+  <p><b>UserId:</b> {{ album.userId }}</p>
+  
+  <label>
+    <b>Title:</b>
+    <input [(ngModel)]="editedTitle" />
+  </label>
+
+  <!-- <label style="margin-top: 15px;">
+    <b>Show photos (count):</b>
+    <input type="number" [(ngModel)]="photoLimit" min="1" max="50" style="width: 60px; text-align: center;"/>
+  </label> -->
+
+  <div class="actions">
+    <button type="button" (click)="save()" class="save" [disabled]="saving">
+      {{ saving ? 'Saving...' : 'Save' }}
+    </button>
+
+    <a [routerLink]="['/albums', album.id, 'photos']" [queryParams]="{ limit: photoLimit }">
+      View Photos
+    </a>
+
+    <button type="button" (click)="back()" class="back">Back</button>
+  </div>
+</div>

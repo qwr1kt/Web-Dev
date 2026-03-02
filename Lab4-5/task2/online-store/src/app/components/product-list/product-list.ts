@@ -200,4 +200,13 @@ export class ProductList {
     this.products = this.products.filter(p => p.id !== id);
     console.log('Товар с id ' + id + ' удален');
   }
+
+  sortProducts() {
+  this.products.sort((a: any, b: any) => {
+    return a.price -b.price;
+  });
+  
+  this.products = [...this.products];
+}
+
 }

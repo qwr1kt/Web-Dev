@@ -13,7 +13,6 @@ import { ProductCard } from "./components/product-card/product-card";
       <img src="/assets/images/Logo_of_Kaspi_bank.png" alt="Kaspi Logo" class="kaspi-logo">
       <div class="logo">Kaspi.kz</div>
       <div class="filter-buttons">
-      <button [class.active]="selectedCategory === 'Все'" (click)="selectedCategory = 'Все'">Все</button>
         <button [class.active]="selectedCategory === 'Smartphones'" (click)="selectedCategory = 'Smartphones'">Смартфоны</button>
         <button [class.active]="selectedCategory === 'Laptops'" (click)="selectedCategory = 'Laptops'">Ноутбуки</button>
         <button [class.active]="selectedCategory === 'Accessories'" (click)="selectedCategory = 'Accessories'">Аксессуары</button>

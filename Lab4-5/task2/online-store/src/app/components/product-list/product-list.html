@@ -14,9 +14,12 @@
       <app-product-card [product]="product"></app-product-card>
     }
   }
+  <button [class.active]="selectedCategory === 'Все'" (click)="selectedCategory = 'Все'">Все</button>
+
 </div> -->
 
 <div class="container">
+  <button (click)="sortProducts()">Сорт</button>
 <div class="products-grid">
   @for (product of products; track product.id) {
     @if (currentCategory === 'Все' || product.category === currentCategory) {

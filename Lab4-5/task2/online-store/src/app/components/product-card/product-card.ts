@@ -26,7 +26,7 @@ export class ProductCard {
   }
 
   getStarsArray(rating: number): number[] {
-    const fullStars = Math.floor(rating);
+    const fullStars = Math.round(rating);
     return new Array(fullStars).fill(0);
   }
 
@@ -54,7 +54,10 @@ export class ProductCard {
 
   // Метод для лайков
   increaseLikes() {
-    this.product.likes++;
+  if (this.product.likes === 0) {
+    this.product.likes = 1; 
+  } else {
+    this.product.likes = 0;
   }
-  
+}
 }
